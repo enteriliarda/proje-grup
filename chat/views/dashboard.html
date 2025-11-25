@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+        <h2 class="logo">GRUP PANEL</h2>
+        <nav>
+            <ul>
+                <li class="active"><a href="/dashboard">Panel</a></li>
+                <li><a href="/logout">Çıkış</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="content">
+
+        <h1>Hoş Geldiniz</h1>
+        <p>Grup çalışma portalı</p>
+
+        <!-- DUYURU EKLEME -->
+        <section class="card">
+            <h2>Duyuru Ekle</h2>
+            <form action="/add-announcement" method="POST">
+                <input type="text" name="title" placeholder="Başlık" required>
+                <textarea name="body" placeholder="Açıklama" required></textarea>
+                <button type="submit">Ekle</button>
+            </form>
+        </section>
+
+        <!-- DUYURU LİSTESİ -->
+        <section class="card">
+            <h2>Duyurular</h2>
+            <div id="announceList">Yükleniyor...</div>
+        </section>
+
+        <!-- DOSYA YÜKLEME -->
+        <section class="card">
+            <h2>Dosya Yükle</h2>
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <input type="file" name="file" required>
+                <button type="submit">Yükle</button>
+            </form>
+        </section>
+
+        <!-- DOSYA LİSTESİ -->
+        <section class="card">
+            <h2>Dosyalar</h2>
+            <div id="fileList">Yükleniyor...</div>
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

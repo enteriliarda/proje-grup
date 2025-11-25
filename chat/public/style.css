@@ -1,0 +1,78 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Inter, sans-serif; }
+
+body { background: #f3f4f6; }
+
+/* LOGIN */
+.login-body { display: flex; justify-content: center; align-items: center; height: 100vh; }
+.login-box {
+    background: white; padding: 20px; border-radius: 12px;
+    width: 300px; box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+.login-box input {
+    width: 100%; padding: 10px; margin: 8px 0;
+    border: 1px solid #ccc; border-radius: 6px;
+}
+.login-box button {
+    width: 100%; padding: 10px; background: #2563eb; color: white;
+    border: none; border-radius: 6px; cursor: pointer;
+}
+
+/* DASHBOARD LAYOUT */
+.container { display: flex; height: 100vh; }
+
+.sidebar {
+    width: 240px; background: #1f2937; color: white; padding: 20px;
+}
+
+.logo { text-align: center; margin-bottom: 20px; }
+
+.sidebar ul { list-style: none; }
+.sidebar li { margin: 15px 0; }
+.sidebar a { color: #cbd5e0; text-decoration: none; }
+.sidebar a:hover { color: #fff; }
+
+/* MAIN CONTENT */
+.content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: scroll;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.card input, .card textarea {
+    width: 100%; padding: 10px; margin: 8px 0;
+    border: 1px solid #ccc; border-radius: 6px;
+}
+
+.card button {
+    padding: 10px 14px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* LISTS */
+.announce-item, .file-item {
+    background: #f1f5f9;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.file-item a {
+    float: right;
+    background: #3b82f6;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+}
